@@ -16,7 +16,8 @@ app.use(json());
 
 
 router.get('/home', ctx => {
-    ctx.body = {Text:'Welcome to Jacqueline Taylor and Friends'};
+    ctx.body = {Text:'Welcome to Jacqueline Taylor and Friends'},
+    console.log(ctx.response)
 });
 
 // router middleware

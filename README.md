@@ -5,6 +5,6 @@
 * update package.json to use nodemon
 * commands
   * npm run dev
-  * npm run start
+  * npm start
 
 * npm i koa-json
