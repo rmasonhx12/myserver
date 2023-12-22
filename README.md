@@ -1,4 +1,4 @@
-# KOA --- Built by Express to be more permant
+# KOA --- Built by Express to be more performant
 # setup
 * npm init
 * npm install koa
