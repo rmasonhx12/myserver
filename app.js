@@ -5,6 +5,7 @@
 
 import Koa from 'koa';
 import KoaRouter from 'koa-router';
+import '@babel/polyfill';
 
 // not required -- shows json in browser
 const json = require('koa-json');
@@ -25,7 +26,14 @@ router.get('/home', ctx => {
     ctx.body = {Text:'Welcome to Jacqueline Taylor and Friends'},
     console.log(ctx.response)
 });
-
+// async timer
+router.get('/timer', async(ctx,next) => {
+    const start = new Date;
+    await next();
+    const ms = new Date -start;
+    ctx.body = {time: `Started at ${start}`, 
+                totaltime: `Elapsed: ${ms}ms`}
+        })
 // router middleware
 app.use(router.routes()).use(router.allowedMethods());
 
