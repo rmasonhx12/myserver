@@ -1,7 +1,12 @@
 // build koa server
 
-const Koa = require('koa');
-const KoaRouter = require('koa-router');
+//const Koa = require('koa');
+//const KoaRouter = require('koa-router');
+
+import Koa from 'koa';
+import KoaRouter from 'koa-router';
+
+// not required -- shows json in browser
 const json = require('koa-json');
 
 const port = 3100;
