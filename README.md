@@ -6,3 +6,5 @@
 * commands
   * npm run dev
   * npm run start
+
+* npm i koa-json
