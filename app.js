@@ -16,6 +16,7 @@ app.use(json());
 
 
 router.get('/home', ctx => {
+    console.log(ctx.request.query),
     ctx.body = {Text:'Welcome to Jacqueline Taylor and Friends'},
     console.log(ctx.response)
 });

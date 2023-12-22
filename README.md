@@ -8,3 +8,5 @@
   * npm start
 
 * npm i koa-json
+
+* using query request .../home?name=Robert .../home?item=3
